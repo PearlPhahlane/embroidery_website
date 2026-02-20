@@ -351,11 +351,11 @@
       business_name: 'ThreadLab',
       tagline: 'Stitching Names. Saving Uniforms. Building Pride.',
       hero_title: 'Less Lost, More Loved',
-      hero_subtitle: 'We help parents stress less when school uniforms go missing — with smart, discreet name embroidery. We also create unique personal designs for your belongings, and embroider uniforms and badges for companies, crèches, and schools.\Bespoke embroidery designs that transform ordinary fabrics into extraordinary works of art. Each piece tells a unique story.',
-      about_title: 'Crafting Beauty, One Thread at a Time',
-      about_text: "Founded with a passion for the timeless art of embroidery, our studio has been transforming fabrics into treasured keepsakes for over 15 years. We believe that every stitch tells a story, and we're honored to help you tell yours.",
-      contact_email: 'hello@threadcraftstudio.com',
-      contact_phone: '(555) 123-4567',
+      hero_subtitle: 'We help parents stress less when school uniforms go missing — with smart, discreet name embroidery. We also create unique personal designs for your belongings, and embroider uniforms and badges for companies, crèches, and schools.',
+      about_title: 'Embroidery That Helps Real Life',
+      about_text: "ThreadLab exists to make life easier for families and communities. We offer discreet name embroidery for school uniforms so lost items can be returned quickly — without putting a child’s name in plain sight. We also personalise everyday items with custom designs, and provide professional uniform embroidery and school badge stitching for businesses, crèches, and schools.",
+      contact_email: 'hello@threadlab.com',
+      whatsapp: '(555) 123-4567',
       background_color: '#faf7f2',
       surface_color: '#2d3436',
       text_color: '#5a6c7d',
@@ -401,7 +401,7 @@
       document.getElementById('about-title').textContent = config.about_title || defaultConfig.about_title;
       document.getElementById('about-text').textContent = config.about_text || defaultConfig.about_text;
       document.getElementById('contact-email-display').textContent = config.contact_email || defaultConfig.contact_email;
-      document.getElementById('contact-phone-display').textContent = config.contact_phone || defaultConfig.contact_phone;
+      document.getElementById('contact-phone-display').textContent = config.whatsapp || defaultConfig.whatsapp;
 
       // Apply colors
       const bgColor = config.background_color || defaultConfig.background_color;
@@ -479,7 +479,7 @@
         ['about_title', config.about_title || defaultConfig.about_title],
         ['about_text', config.about_text || defaultConfig.about_text],
         ['contact_email', config.contact_email || defaultConfig.contact_email],
-        ['contact_phone', config.contact_phone || defaultConfig.contact_phone]
+        ['whatsapp', config.whatsapp || defaultConfig.whatsapp]
       ]);
     }
 
